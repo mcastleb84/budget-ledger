@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
+  <title>Budget Ledger</title>
+
+  <!-- iOS Standalone App Metadata -->
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="apple-mobile-web-app-title" content="Budget Ledger">
+  <meta name="theme-color" content="#5c7f66">
+  <link rel="apple-touch-icon" href="https://img.icons8.com/fluency/192/wallet.png">
+
+  <!-- Lucide Icons -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+
+  <style>
+    :root {
+      --bg-green: #5c7f66;
+      --bg-dots: rgba(35, 59, 41, 0.25);
+      --box-main: #d49b27;
+      --box-inner: #f4cb66;
+      --box-border: #b37f19;
+      --text-dark: #3a2203;
+      --text-muted: #5e3d09;
+      --deposit-green: #14532d;
+      --withdraw-red: #7f1d1d;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      -webkit-tap-highlight-color: transparent;
+    }
+
+    body {
+      background-color: var(--bg-green);
+      background-image: radial-gradient(var(--bg-dots) 1.5px, transparent 1.5px);
+      background-size: 16px 16px;
+      color: var(--text-dark);
+      min-height: 100vh;
+      padding: env(safe-area-inset-top, 16px) 16px env(safe-area-inset-bottom, 24px);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .app-container {
+      width: 100%;
+      max-width: 680px;
+      margin: 0 auto;
+    }
+
+    /* Common Dark Yellow Card Styling */
+    .card {
+      background: var(--box-main);
+      border: 1px solid var(--box-border);
+      border-radius: 16px;
+      padding: 16px;
+      margin-bottom: 
